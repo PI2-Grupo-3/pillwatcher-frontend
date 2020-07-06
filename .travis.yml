@@ -3,14 +3,14 @@ language: node_js
 node_js:
   - "stable"
 
-# addons:
-#   sonarcloud:
-#     organization: "pillwatcher-dpb-service"
-#     token: ${SONAR_TOKEN}
+addons:
+  sonarcloud:
+    organization: "pillwatcher-dpb-service"
+    token: ${SONAR_TOKEN}
 
 stages:
   - Build
-  - Test
+  # - Test
   # - SonarQube Analysis
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
     script: 
       - yarn
       - yarn build
-  - stage: Test
-    script: yarn test
-# - stage: SonarQube Analysis
-#   script: mvn clean verify sonar:sonar -Pcoverage -Dsonar.projectKey=PI2-Grupo-3_pillwatcher-dpb-service
+  # - stage: Test
+  #   script: yarn test
+  # - stage: SonarQube Analysis
+  #   script: sonar-scanner
