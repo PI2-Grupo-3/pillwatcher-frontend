@@ -2,7 +2,7 @@
 
 ## Usage
 
-### React JS + Redux
+### React Native
 
 **DPF Service** It is a platform for controlling medications and prescriptions for any patient.
 
