@@ -4,6 +4,11 @@ import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from 'reac
 export default function Login() {
   return (
     <View style={styles.container}>
+      
+      <View style={{flex: 0.4, width: 0.1, height: 50, marginLeft:200}}> 
+        <Image source={require('../assets/comprimido2.png')}/>
+      </View>
+
       <Text style={styles.text}>Login</Text>
 
       <TextInput
@@ -16,6 +21,7 @@ export default function Login() {
         secureTextEntry={true}
         style={styles.input}
       />
+
       <TouchableOpacity
       style={styles.botao}
       onPress={ () => {this.clicou()}}
@@ -29,7 +35,11 @@ export default function Login() {
       >
       Esqueci minha senha
       </Text>
-
+      <View style={{flex:0.25}}/>
+      
+      <View style={{flex: 0.24, flexDirection: 'row',width:405, height:0.1}}> 
+        <Image source={require('../assets/comprimido1.png')}/>
+      </View>
     </View>
   );
 }
@@ -39,7 +49,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#1D3557',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   text: {
     fontSize:30,
@@ -70,4 +80,10 @@ const styles = StyleSheet.create({
     color:'#FFFFFF',
     padding:30,
   },
+  textbotao:{
+    fontSize:15,
+    fontWeight:'bold',
+    color:'#1D3557',
+    marginTop:5
+  }
 });
