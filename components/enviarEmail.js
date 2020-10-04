@@ -1,41 +1,26 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 
-export default function Login({ navigation }) {
+export default function EnviarEmail({ navigation }) {
   return (
     <View style={styles.container}>
       
-      <View style={{flex: 0.4, width: 0.1, height: 50, marginLeft:200}}> 
+      <View style={{flex: 0.4, width: 0.1, height: 55, marginLeft:200}}> 
         <Image source={require('../assets/comprimido2.png')}/>
       </View>
 
-      <Text style={styles.text}>Login</Text>
+      <Text style={styles.text}>Email Enviado!</Text>
 
-      <TextInput
-        placeholder="Digite seu cpf"
-        style={styles.input}
-      />
-
-      <TextInput
-        placeholder="Digite sua senha"
-        secureTextEntry={true}
-        style={styles.input}
-      />
+      <Text style={styles.subText}>Enviamos um link para recuperação de senha no e-mail cadastrado. </Text>
 
       <TouchableOpacity
       style={styles.botao}
-      onPress={ () => navigation.navigate('RecuperarSenha')}
+      onPress={ () => navigation.navigate('Login')}
       >
-        <Text style={styles.textbotao}>Entrar</Text>
+        <Text style={styles.textbotao}>Retornar a Tela de Login</Text>
       </TouchableOpacity>
 
-      <Text
-      style={styles.textsenha}
-      onPress={ () => navigation.navigate('RecuperarSenha')}
-      >
-      Esqueci minha senha
-      </Text>
-      <View style={{flex:0.25}}/>
+      <View style={{flex:0.35}}/>
       
       <View style={{flex: 0.35, flexDirection: 'row',width:405, height:0.1}}> 
         <Image source={require('../assets/comprimido1.png')}/>
@@ -57,6 +42,11 @@ const styles = StyleSheet.create({
     color:'#FFFFFF',
     padding:50,
   },
+  subText:{
+    fontSize:20,
+    color:'#FFFFFF',
+    padding:50,
+  },
   input: {
     marginTop:10,
     padding:10,
@@ -73,12 +63,6 @@ const styles = StyleSheet.create({
     borderRadius:3,
     alignItems:'center',
     justifyContent:'center',
-  },
-  textsenha: {
-    fontSize:15,
-    fontWeight:'bold',
-    color:'#FFFFFF',
-    padding:30,
   },
   textbotao:{
     fontSize:15,
