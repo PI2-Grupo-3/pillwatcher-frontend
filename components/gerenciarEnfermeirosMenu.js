@@ -34,7 +34,7 @@ export default function gerenciarEnfermeirosMenu({ navigation }) {
         </TouchableOpacity>
         <TouchableOpacity
         style={styles.botaoDireita}
-        onPress={ () => navigation.navigate('GerenciarEnfermeirosMenu')}
+        onPress={ () => navigation.navigate('AdminMenu')}
         >
             <Image 
             source={require('../assets/deletarIcone.png')}
