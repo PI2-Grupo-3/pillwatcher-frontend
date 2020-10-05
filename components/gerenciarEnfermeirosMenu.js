@@ -34,7 +34,7 @@ export default function gerenciarEnfermeirosMenu({ navigation }) {
         </TouchableOpacity>
         <TouchableOpacity
         style={styles.botaoDireita}
-        onPress={ () => navigation.navigate('AdminMenu')}
+        onPress={ () => navigation.navigate('DeletarEnfermeiro')}
         >
             <Image 
             source={require('../assets/deletarIcone.png')}
@@ -55,7 +55,7 @@ export default function gerenciarEnfermeirosMenu({ navigation }) {
         </TouchableOpacity>
         <TouchableOpacity
         style={styles.botaoDireita}
-        onPress={ () => navigation.navigate('GerenciarEnfermeirosMenu')}
+        onPress={ () => navigation.navigate('DeletarEnfermeiro')}
         >
             <Image 
             source={require('../assets/deletarIcone.png')}
@@ -76,7 +76,7 @@ export default function gerenciarEnfermeirosMenu({ navigation }) {
         </TouchableOpacity>
         <TouchableOpacity
         style={styles.botaoDireita}
-        onPress={ () => navigation.navigate('GerenciarEnfermeirosMenu')}
+        onPress={ () => navigation.navigate('DeletarEnfermeiro')}
         >
             <Image 
             source={require('../assets/deletarIcone.png')}

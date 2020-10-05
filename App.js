@@ -9,6 +9,9 @@ import EnviarEmail from './components/enviarEmail';
 import AdminMenu from './components/adminMenu';
 import GerenciarEnfermeirosMenu from './components/gerenciarEnfermeirosMenu';
 import AlterarDadosEnfermeiro from './components/alterarDadosEnfermeiro';
+import DeletarEnfermeiro from './components/deletarEnfermeiro';
+import ConfirmarEnfermeiroDeletado from './components/confirmarEnfermeiroDeletado';
+
 
 const Stack = createStackNavigator();
 
@@ -22,6 +25,8 @@ export default function App() {
         <Stack.Screen name='AdminMenu' component={AdminMenu}/>
         <Stack.Screen name='GerenciarEnfermeirosMenu' component={GerenciarEnfermeirosMenu}/>
         <Stack.Screen name='AlterarDadosEnfermeiro' component={AlterarDadosEnfermeiro}/>
+        <Stack.Screen name='DeletarEnfermeiro' component={DeletarEnfermeiro}/>
+        <Stack.Screen name='ConfirmarEnfermeiroDeletado' component={ConfirmarEnfermeiroDeletado}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
