@@ -31,7 +31,7 @@ export default function Login({ navigation }) {
 
       <Text
       style={styles.textsenha}
-      onPress={ () => navigation.navigate('Index')}
+      onPress={ () => navigation.navigate('CadastroEnfermeiro')}
       >
       Esqueci minha senha
       </Text>

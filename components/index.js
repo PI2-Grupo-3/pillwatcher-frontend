@@ -25,39 +25,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center'
   },
-  text: {
-    fontSize:30,
-    fontWeight:'bold',
-    color:'#FFFFFF',
-    padding:50,
-  },
-  input: {
-    marginTop:10,
-    padding:10,
-    width:300,
-    backgroundColor:'#fff',
-    fontSize:16,
-    borderRadius:3,
-  },
-  botao: {
-    width:300,
-    height:42,
-    backgroundColor:'#F1FAEE',
-    marginTop:10,
-    borderRadius:3,
-    alignItems:'center',
-    justifyContent:'center',
-  },
-  textsenha: {
-    fontSize:15,
-    fontWeight:'bold',
-    color:'#FFFFFF',
-    padding:30,
-  },
-  textbotao:{
-    fontSize:15,
-    fontWeight:'bold',
-    color:'#1D3557',
-    padding:2,
-  }
 });

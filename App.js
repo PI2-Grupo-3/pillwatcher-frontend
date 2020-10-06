@@ -12,7 +12,7 @@ import GerenciarEnfermeirosMenu from './components/gerenciarEnfermeirosMenu';
 import AlterarDadosEnfermeiro from './components/alterarDadosEnfermeiro';
 import DeletarEnfermeiro from './components/deletarEnfermeiro';
 import ConfirmarEnfermeiroDeletado from './components/confirmarEnfermeiroDeletado';
-
+import CadastroEnfermeiro from './components/cadastroEnfermeiro';
 
 const Stack = createStackNavigator();
 
@@ -22,6 +22,7 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen name='Login' component={Login}/>
         <Stack.Screen name='Index' component={Index}/>
+        <Stack.Screen name='CadastroEnfermeiro' component={CadastroEnfermeiro}/>
         <Stack.Screen name='RecuperarSenha' component={RecuperarSenha}/>
         <Stack.Screen name='EnviarEmail' component={EnviarEmail}/>
         <Stack.Screen name='AdminMenu' component={AdminMenu}/>
