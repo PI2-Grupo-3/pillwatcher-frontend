@@ -24,7 +24,7 @@ export default function Login({ navigation }) {
 
       <TouchableOpacity
       style={styles.botao}
-      onPress={ () => navigation.navigate('RecuperarSenha')}
+      onPress={ () => navigation.navigate('AdminMenu')}
       >
         <Text style={styles.textbotao}>Entrar</Text>
       </TouchableOpacity>
