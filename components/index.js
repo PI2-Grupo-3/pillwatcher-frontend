@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from 'react-native';
 
-export default function Login({ navigation }) {
+export default function Index({ navigation }) {
   return (
     <View style={styles.container}>
 
@@ -9,32 +9,6 @@ export default function Login({ navigation }) {
         <Image source={require('../assets/comprimido2.png')}/>
       </View>
 
-      <Text style={styles.text}>Login</Text>
-
-      <TextInput
-        placeholder="Digite seu cpf"
-        style={styles.input}
-      />
-
-      <TextInput
-        placeholder="Digite sua senha"
-        secureTextEntry={true}
-        style={styles.input}
-      />
-
-      <TouchableOpacity
-      style={styles.botao}
-      onPress={ () => navigation.navigate('AdminMenu')}
-      >
-        <Text style={styles.textbotao}>Entrar</Text>
-      </TouchableOpacity>
-
-      <Text
-      style={styles.textsenha}
-      onPress={ () => navigation.navigate('Index')}
-      >
-      Esqueci minha senha
-      </Text>
       <View style={{flex:0.25}}/>
 
       <View style={{flex: 0.35, flexDirection: 'row',width:405, height:0.1}}>
